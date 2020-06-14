@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Windows</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<!-- =========================================section header================================== -->
+	
+	<header class="header">
+		<div class="wrapper header_wrapper">
+			<img src="img/logo.png" class="header_logo" alt="Логотип компании">
+			<div class="header__company">
+				<div class="header__company_name">Название компании</div>
+				<div class="header__company_description">самая клёвая компания</div>
+			</div>
+			<div class="header_contacts">
+				<a href="tel:+74997777777">+7(499) 777-77-77</a>
+				<a href="tel:+74997777777">+7(499) 777-77-77</a>
+			</div>
+		</div>
+	</header>
+	<!-- =========================================section form===================================== -->
+	
+	<section class="form">
+		<div class="wrapper">
+			<div class="form_wrapper">
+				<p class="form-title section-titles">форма с кнопкой</p>
+				<form action="#" name="leave_phone" onsubmit="return false" >
+					<p class="form-description">оставь телефон и получи что-то офигенное</p>
+					<input type="tel" name="phone" placeholder="Введите номер" required autocomplete="off">
+					<input type="submit" value="получить" class="send_phone">
+				</form>
+				<div class="form-popup close">
+					<p>Ваше сообщение отправлено!</p>
+					<button class="form-popup_button">OK</button>
+					<div class="form-popup_cross"></div>
+				</div>
+			</div>
+	</section>
+
+	<!-- =========================================slider ===================================== -->
+	
+	<section class="slider-block">
+		<div class="wrapper">
+			<div class="slider-block_title section-titles">тут у нас слайдер</div>
+			<div class="slider">
+				<div class="slider_window">
+					<div class="slide"><img src="img/1.jpg" alt="Образец №1"></div>
+					<div class="slide"><img src="img/2.jpg" alt="Образец №2"></div>
+					<div class="slide"><img src="img/3.jpg" alt="Образец №3"></div>
+					<div class="slide"><img src="img/4.jpg" alt="Образец №4"></div>
+					<div class="slide"><img src="img/5.jpg" alt="Образец №5"></div>
+				</div>
+				<div class="dots" id="dots"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================text block ===================================== -->
+
+	<section class="text-block">
+		<div class="wrapper">
+			<p class="text-block_title section-titles">просто текстовый блок</p>
+			<article class="text-block_article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac dui lacus. Nulla dapibus interdum interdum. Curabitur ut diam nisl. Vivamus libero lacus, viverra at dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna ut, placerat nulla. Duis nunc urna, semper non arcu ut, sagittis dapibus lorem. Nunc nec urna id velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in risus ante.</article>
+		</div>
+	</section>
+
+	<!-- =========================================calc block ==================================== -->
+
+	<section class="calc-block">
+		<div class="wrapper">
+			<div class="calc-block_title section-titles">Калькулятор <br>(стоимость пользователь узнает по телефону)</div>
+			<div class="calc-block__window-types">
+				<div class="calc-block__window-types_type"><img src="img/calc_type_1.png" class="type_pic" alt="Одностворчатое"><p class="type_selector">Одностворчатое</p></div>
+				<div class="calc-block__window-types_type"><img src="img/calc_type_2.png" class="type_pic" alt="Двуcтворчатое"><p class="type_selector">Двухстворчатое</p></div>
+				<div class="calc-block__window-types_type"><img src="img/calc_type_3.png" class="type_pic" alt="Трехстворчатое"><p class="type_selector">Трехстворчатое</p></div>
+				<div class="calc-block__window-types_type"><img src="img/calc_type_4.png" class="type_pic" alt="Балконный блок"><p class="type_selector">Балконный блок</p></div>
+				<div class="calc-block__window-types_type"><img src="img/calc_type_5.png" class="type_pic" alt="Остекление балкона"><p class="type_selector">Остекление балкона</p></div>
+			</div>
+				<form action="#" class="calc-block_form" id="calc_form" name="calc-block_form" onsubmit="return false">
+					<div class="width-height">
+						<div class="width-height_img"><img src="img/calc_type_1l.png" id="selected_pic" alt="Одностворчатое"></div>
+						<div class="width-height_sizes">
+							<input type="number" name="width" placeholder="120" autocomplete="off">
+							<span></span>
+							<input type="number" name="heigh" placeholder="120" autocomplete="off">
+						</div>
+					</div>
+					<div class="options">
+						<input name= "window-type "class="window-type" id="window-type" type="text" value="Одностворчатое окно KBE" disabled>
+						<div class="criterion">
+							<p>1. Критерий выбора</p>
+							<p><input name="criterion" type="radio" id="criterion-1" value="пункт выбора 1"><label for="criterion-1">пункт выбора 1</label></p>
+							<p><input name="criterion" type="radio" id="criterion-2" value="пункт выбора 2"><label for="criterion-2">пункт выбора 2</label></p>
+							<p><input name="criterion" type="radio" id="criterion-3" value="пункт выбора 3"><label for="criterion-3">пункт выбора 3</label></p>
+						</div>
+						<div class="select_feature">
+							<label for="feature">2. Выберите открывание створки</label>
+							<select name="feature" id="feature" form="calc-block_form">
+								<option value="no open" selected>Не открывается</option>
+								<option value="open">Открывается</option>
+								<option value="move" >Раздвижная</option>
+								<option value="rotate">Поворотная</option>
+							</select>
+						</div>
+					</div>
+					<div class="calc-send">
+						<input type="tel" name="phone_calc-form" required placeholder="Введите номер" autocomplete="off">
+						<input type="submit" value="рассчитать" class="send_calc">
+					</div>
+					<div class="form-popup close">
+					<p>Сейсас мы всё посчитаем и обязательно Вам перезвоним!</p>
+					<button class="form-popup_button">OK</button>
+					<div class="form-popup_cross"></div>
+				</div>
+				</form>
+		</div>
+	</section>
+
+	<!-- =========================================footer ===================================== -->
+
+	<footer class="footer">
+		<div class="wrapper">
+			<p class="footer_title">Просто</p>
+			<p class="footer_copyright">скромный футер</p>
+		</div>
+	</footer>
+
+	<!-- ================================================SCRIPTS==================================== -->
+
+	<script type="text/javascript">
+		window.onload = function() {
+			let slider_wrapper = document.querySelector(".slider_window"), // контейнер слайдов 
+			slides = document.querySelectorAll(".slide"), // получил все слайды
+			slides_qty = slides.length, // кол-во слайдов
+			dots = document.querySelector(".dots"),  // контейнер точек
+			slide = document.querySelector(".slide"); // один слайд
+			// ===================== точки=======================
+			for (let i = 0; i < slides_qty ; i++) {
+				let dot = document.createElement('div');
+				if (i == 0) {
+					dot.className = 'dot active';
+					dots.appendChild(dot);
+				} else {
+					dot.className = 'dot';
+					dots.appendChild(dot);
+				}
+			}
+
+			//т.к. Слайдер должен тянуться на всю ширину экрана надо добавить в конец/начало по неактивному слайду и
+			//+ еще 2 для > 1920
+			let cloneImg_1 =  document.querySelector(".slide").cloneNode(true); 
+			slider_wrapper.appendChild(cloneImg_1); 
+			let cloneImg_2 = document.querySelector(".slide").cloneNode(true); // тут ещё раз создать
+			slider_wrapper.insertBefore(cloneImg_2, slider_wrapper.childNodes[0]); // для ie-11  ?
+			let cloneImg_3 = document.querySelector(".slide").cloneNode(true); 
+			slider_wrapper.insertBefore(cloneImg_3, slider_wrapper.childNodes[0]);
+			let cloneImg_4 =  document.querySelector(".slide").cloneNode(true); 
+			slider_wrapper.appendChild(cloneImg_4);
+
+			let margin = window.getComputedStyle(slide,null).getPropertyValue("margin-right");// отступ от слайда
+			margin = +margin.slice(0,2); // отрезаем px 
+			let width = document.querySelector(".slider_window").offsetWidth; // ширина прозрачной рнамки \\ IE  не успевает получить ширину, если стоит в начале и слайдер замирает
+			
+			// начальное смещение , чтоб небыло пусто слева
+			let pos_start = 2*width + 2*margin; //тут если 1920 то убираем 2 декоративных и "коэффициент" тоже
+			
+			setTimeout(function(){
+				slider_wrapper.style.transform = "translateX(-"+(pos_start)+"px)"; //[style.css] не работает ie-11 ?
+			}, 1000);
+			
+
+			// слайд в рамке видимым при загрузке
+			slides[0].className = "slide shown"; 
+
+			let resize = pos_start; // на случай поворота экрана
+			let resize_index = 0;// на случай поворота экрана
+
+			// двигаем по нажатию на точки
+			for (let j = 0; j < dots.children.length; j++) {
+				(function(index){
+					dots.children[j].onclick = function(){
+						
+						slider_wrapper.style.transform = "translateX(-"+(pos_start + (margin + width)*index)+"px)";
+							resize_index = index; // на случай поворота экрана
+							resize = pos_start + (margin + width)*index; // на случай поворота экрана
+							document.querySelector(".active").className = "dot"; 
+							document.querySelector(".slide.shown").className = "slide";
+							this.className = 'dot active';
+							slides[index].className = "slide shown";
+						}
+					}
+				)
+			(j);
+			}
+			// =========================  на случай изменения размера экрана ====================
+			window.onresize = function() {
+				let window_width = document.documentElement.clientWidth;
+				if (window_width < 769 ) {
+					width = document.querySelector(".slider_window").offsetWidth;
+					pos_start = 2*width + 2*margin;
+					slider_wrapper.style.transform = "translateX(-"+(pos_start + (margin + width)*resize_index)+"px)" ;
+				};}
+			// =========================  на случай поворота экрана ====================
+			window.onorientationchange  = function() {
+				let window_width = document.documentElement.clientWidth;
+				if (window_width < 769 ) { // слайдер резиновый  
+					width = document.querySelector(".slider_window").offsetWidth;
+					pos_start = 2*width + 2*margin;
+					slider_wrapper.style.transform = "translateX(-"+(pos_start + (margin + width)*resize_index)+"px)" ;
+				};}
+
+				// ===================окна форм и "калькулятор" =================================
+			let cross = document.querySelector(".form-popup_cross"),
+				calc_cross = document.querySelector(".calc-block_form .form-popup_cross"),
+				popup = document.querySelector(".form-popup"),
+				calc_popup = document.querySelector(".calc-block_form .form-popup"),
+				send_phone = document.querySelector(".send_phone"),
+				ok_button = document.querySelector(".form-popup_button"),
+				ok_calc_button = document.querySelector(".calc-block_form .form-popup_button "),
+				send_calc = document.querySelector(".send_calc");
+
+				// =======================проверка формы ============================
+				send_phone.onclick = function (){
+					var x=document.forms["leave_phone"]["phone"].value;
+					if (x.length !== 0){
+						popup.className = 'form-popup';
+						// document.leave_phone.reset();
+					};
+				};
+
+				send_calc.onclick = function (){
+					var x=document.forms["calc-block_form"]["phone_calc-form"].value;
+					if (x.length !== 0){
+						calc_popup.className = 'form-popup';
+						// document.getElementById('calc_form').reset();
+					};
+				};
+
+				// ==============================закрытие по кнопке ОК и крестику =================
+				ok_button.onclick = function () {
+					popup.className = 'form-popup close';
+				};
+
+				ok_calc_button.onclick = function () {
+					calc_popup.className = 'form-popup close';
+				};
+
+				cross.onclick = function () {
+					popup.className = 'form-popup close';
+				}
+
+				calc_cross.onclick = function () {
+					calc_popup.className = 'form-popup close';
+				}
+				
+				// =====================выбор типа пакетов в калькуляторе=======================
+				let type_selectorS = document.querySelectorAll(".type_selector");
+				let type_picS = document.querySelectorAll(".type_pic");
+				for (let i = 0; i < type_selectorS.length; i++) {
+					if (i < 3) {
+						type_selectorS[i].onclick = function () {
+						document.getElementById('window-type').value = this.textContent + " окно KBE";
+						document.getElementById('selected_pic').src = this.previousSibling.src
+						}
+					} else {
+						type_selectorS[i].onclick = function () {
+						document.getElementById('window-type').value = this.textContent + " KBE";
+						document.getElementById('selected_pic').src = this.previousSibling.src;
+							}
+					}
+				}
+			}
+	</script>
+
+</body>
+</html>
