@@ -76,7 +76,7 @@
 		<div class="wrapper">
 			<div class="calc-block_title section-titles">Калькулятор <br>(стоимость пользователь узнает по телефону)</div>
 			<div class="calc-block__window-types">
-				<div class="calc-block__window-types_type"><img src="img/calc_type_1.png" class="type_pic" alt="Одностворчатое"><p class="type_selector">Одностворчатое</p></div>
+				<div class="calc-block__window-types_type"><img src="img/calc_type_1.png" class="type_pic" alt="Одностворчатое"><p class="type_selector selected_type">Одностворчатое</p></div>
 				<div class="calc-block__window-types_type"><img src="img/calc_type_2.png" class="type_pic" alt="Двуcтворчатое"><p class="type_selector">Двухстворчатое</p></div>
 				<div class="calc-block__window-types_type"><img src="img/calc_type_3.png" class="type_pic" alt="Трехстворчатое"><p class="type_selector">Трехстворчатое</p></div>
 				<div class="calc-block__window-types_type"><img src="img/calc_type_4.png" class="type_pic" alt="Балконный блок"><p class="type_selector">Балконный блок</p></div>
@@ -260,18 +260,23 @@
 				}
 				
 				// =====================выбор типа пакетов в калькуляторе=======================
+
 				let type_selectorS = document.querySelectorAll(".type_selector");
 				let type_picS = document.querySelectorAll(".type_pic");
 				for (let i = 0; i < type_selectorS.length; i++) {
 					if (i < 3) {
 						type_selectorS[i].onclick = function () {
 						document.getElementById('window-type').value = this.textContent + " окно KBE";
-						document.getElementById('selected_pic').src = this.previousSibling.src
+						document.getElementById('selected_pic').src = this.previousSibling.src;
+						document.querySelector(".selected_type").className = "type_selector";
+						this.className = "type_selector selected_type";
 						}
 					} else {
 						type_selectorS[i].onclick = function () {
 						document.getElementById('window-type').value = this.textContent + " KBE";
 						document.getElementById('selected_pic').src = this.previousSibling.src;
+						document.querySelector(".selected_type").className = "type_selector";
+						this.className = "type_selector selected_type";
 							}
 					}
 				}

@@ -374,6 +374,12 @@ form {
 						transform: scale(1);
 					}
 				}
+			&.selected_type {
+				color: #0099de;
+					&:after {
+						transform: scale(1);
+					}
+				}
 			}
 		}
 	}
